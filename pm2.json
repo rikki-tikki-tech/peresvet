@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "peresvet",
+      "script": "next",
+      "args": "start",
+      "instances": "max",
+      "exec_mode": "cluster"
+    }
+  ]
+}
