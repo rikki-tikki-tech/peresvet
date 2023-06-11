@@ -4,8 +4,7 @@ on: push
 
 jobs:
   test:
-    runs-on:
-      group: Default
+    runs-on: self-hosted
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🔎 The name of your branch is ${{ github.ref }}"
