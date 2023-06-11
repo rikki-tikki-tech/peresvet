@@ -85,12 +85,3 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           script_stop: true
           script: ${{ env.deploy_script }}
-
-      - name: 🚀 Deploy to server Svarog via SSH action
-        uses: appleboy/ssh-action@v0.1.10
-        with:
-          host: ${{ secrets.DEPLOY_HOST_SVAROG }}
-          username: ${{ secrets.DEPLOY_USERNAME }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          script_stop: true
-          script: ${{ env.deploy_script }}
